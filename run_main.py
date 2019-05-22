@@ -2,8 +2,12 @@ import unittest
 import logging
 from lib.HTMLTestRunner_PY3 import HTMLTestRunner
 from config.cif import case_dir, report_file, report_tile, report_description
-from case.test_get_rob_resources import TestGetRob
-from case.test_rob_resource import TestRob
+from rob_order.test_get_rob_resources_list import TestGetRob
+from rob_order.test_rob_resource import TestRob
+from academy_query.test_get_school_detail_hot_member_list import *
+from academy_query.test_get_school_hot_member_detail import *
+from academy_query.test_get_school_hot_member_list import *
+from academy_query.test_get_school_rank_member_list import *
 
 
 def run_case():

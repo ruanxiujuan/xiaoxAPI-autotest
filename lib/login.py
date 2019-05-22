@@ -1,52 +1,54 @@
 import requests
 import json
+import jsonpath
 
 
-# 外部顾问登录
-def outside_consultants_login_normal():
-    url = "http://test-xiaoxapi.aoji.cn/login/newLogin"
+class login():
+    def __init__(self, s):
 
-    data = {"type": 2,
-            "acount": "13426475666",
-            "password": "123456"}
-    headers = {
-        'platform': "3",
-        'uuid': "11"
-    }
+        self.s = s
 
-    response = requests.post(url, data=data, headers=headers)
-    # print(json.dumps(response.json(), ensure_ascii=False, sort_keys=False, indent=2))
+    # 外部顾问登录
+    def outside_consultants_login(self, uri):
+        url = uri + "/login/newLogin"
 
-    token = response.json()['body']['token']
-    memberid = response.json()['body']['memberid']
+        data = {"type": 2,
+                "acount": "8613021117364",
+                "password": "000000"}
+        headers = {
+            'platform': "3",
+            'uuid': "11"
+        }
+        response = self.s.post(url, data=data, headers=headers)
+        data = response.json()
+        return data  # 返回用户token，memberid
 
-    # print(token, memberid)
+    # 内部顾问登录
+    def inside_consultants_login(self, host, TYPE, IA, IP, PLATFORM, UUID ):
+        url = host + "login/newLogin"
+        data = {
+            "type": TYPE,
+            "acount": IA,
+            "password": IP
+        }
+        headers = {
+            "platform": PLATFORM,
+            "uuid": UUID
+        }
 
-    return token, memberid  # 返回用户token，memberid
-
-
-# 内部顾问登录
-def internal_consultants_login_normal():
-    url = "http://test-xiaoxapi.aoji.cn/login/newLogin"
-
-    data = {"type": 2,
-            "acount": "13021117364",
-            "password": "000000"}
-    headers = {
-        'platform': "3",
-        'uuid': "11"
-    }
-
-    response = requests.post(url, data=data, headers=headers)
-
-    token = response.json()['body']['token']
-    memberid = response.json()['body']['memberid']
-
-    # print(token, memberid)
-
-    return token, memberid  # 返回用户token，memberid
+        response = self.s.post(url=url, headers=headers, data=data)
+        result = json.dumps(response.json(), ensure_ascii=False, sort_keys=False, indent=2)
+        print(result)
+        token = response.json()['body']['token']
+        memberid = response.json()['body']['memberid']
+        return token, memberid
 
 
-if __name__ == "__main__":
-    outside_consultants_login_normal()
-    # internal_consultants_login_normal()
+
+
+
+
+
+
+
+
