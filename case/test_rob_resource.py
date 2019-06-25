@@ -2,7 +2,7 @@ import unittest
 import requests
 import jsonpath
 import logging
-from test_get_rob_resources import TestGetRob
+from case.test_get_rob_resources import TestGetRob
 from lib.login import outside_consultants_login_normal
 from lib.smart_counselor_db import *
 
