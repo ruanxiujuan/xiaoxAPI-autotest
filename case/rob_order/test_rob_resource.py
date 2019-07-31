@@ -1,8 +1,17 @@
 import unittest
+<<<<<<< HEAD:case/rob_order/test_rob_resource.py
 from rob_order.get_rob_resources_list import get_rob_resources_list
 from common.login import *
 from common.smart_counselor_db import *
 from data_file import default_data
+=======
+import requests
+import jsonpath
+import logging
+from case.test_get_rob_resources import TestGetRob
+from lib.login import outside_consultants_login_normal
+from lib.smart_counselor_db import *
+>>>>>>> dd52c6b50f76f03071d83595009980bdbf0d1ab5:case/test_rob_resource.py
 
 
 class TestRob(unittest.TestCase):
