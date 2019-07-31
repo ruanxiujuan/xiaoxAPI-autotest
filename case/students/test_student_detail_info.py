@@ -1,17 +1,14 @@
 import unittest
-import requests
-import json
-import jsonpath
 import logging
-from lib.login import *
+from common.login import *
 from students.student import *
-from data import data
+from data_file import default_data
 
 
 class TestStudentDetailInfo(unittest.TestCase):
     s = requests.session()
-    uri = data.baseUrl
-    platform = data.platform
+    uri = default_data.baseUrl
+    platform = default_data.platform
 
     @classmethod
     def setUpClass(cls):
@@ -24,6 +21,10 @@ class TestStudentDetailInfo(unittest.TestCase):
         cls.resourceId = resourceId_all[0]
 
     def test_student_detail_info_type1(self):
+        '''
+        学生详情页接口 - 资源阶段
+        :return: 学生详情信息
+        '''
         url = "/counselor/Student/detailInfo"
         headers = {
             "token": self.token,
@@ -36,11 +37,11 @@ class TestStudentDetailInfo(unittest.TestCase):
         }
         response = requests.post(url=self.uri+url, headers=headers, data=data)
         detail = json.dumps(response.json()['body']['detail'], ensure_ascii=False, sort_keys=True, indent=2)
-        print("请求信息：", url, headers, data)
-        print("响应信息", detail)
-        resourceid = jsonpath.jsonpath(response.json(), "$.body.detail.resourceid")
-        print(resourceid)
 
+        logging.info("请求信息：{0}{1}{2}".format(self.uri+url, headers, data))
+        logging.info("响应信息:{}".format(detail))
+
+        resourceid = jsonpath.jsonpath(response.json(), "$.body.detail.resourceid")
 
         # 断言：学生详情信息，增加咨询顾问手机号、文签手机号
         if detail is not None:
@@ -51,6 +52,10 @@ class TestStudentDetailInfo(unittest.TestCase):
                 print(msg)
 
     def test_student_detail_info_type2(self):
+        '''
+        学生详情页接口 - 潜在阶段
+        :return: 学生详情信息
+        '''
         url = "/counselor/Student/detailInfo"
         headers = {
             "token": self.token,
@@ -63,18 +68,23 @@ class TestStudentDetailInfo(unittest.TestCase):
         }
         response = requests.post(url=self.uri+url, headers=headers, data=data)
         detail = json.dumps(response.json()['body']['detail'], ensure_ascii=False, sort_keys=True, indent=2)
-        print("请求信息：", url, headers, data)
-        print("响应信息", detail)
+
+        logging.info("请求信息：{0}{1}{2}".format(self.uri + url, headers, data))
+        logging.info("响应信息:{}".format(detail))
 
         # 断言：学生详情信息，增加咨询顾问手机号、文签手机号
         if detail is not None:
             try:
                 self.assertIn("customermobile", detail)
                 self.assertIn("visaTel", detail)
-            except AssertionError as msg:
-                print(msg)
+            except AssertionError as e:
+                logging.error(e)
 
     def test_student_detail_info_type3(self):
+        '''
+        学生详情页接口 - 已签约
+        :return: 已签约学生详情
+        '''
         url = "/counselor/Student/detailInfo"
         headers = {
             "token": self.token,
@@ -87,8 +97,9 @@ class TestStudentDetailInfo(unittest.TestCase):
         }
         response = requests.post(url=self.uri+url, headers=headers, data=data)
         detail = json.dumps(response.json()['body']['detail'], ensure_ascii=False, sort_keys=True, indent=2)
-        print("请求信息：", url, headers, data)
-        print("响应信息", detail)
+
+        logging.info("请求信息：{0}{1}{2}".format(self.uri + url, headers, data))
+        logging.info("响应信息:{}".format(detail))
 
         # 断言：学生详情信息，增加咨询顾问手机号、文签手机号
         if detail is not None:

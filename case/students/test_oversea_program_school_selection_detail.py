@@ -1,14 +1,14 @@
 import unittest
-import requests
-from lib.login import *
-from data import data
+from common.login import *
+from data_file import default_data
 from student import *
+import logging
 
 
 class TestStudentOverseaProgramDetail(unittest.TestCase):
     s = requests.session()
-    uri = data.baseUrl
-    platform = data.platform
+    uri = default_data.baseUrl
+    platform = default_data.platform
 
     @classmethod
     def setUpClass(cls):
@@ -16,7 +16,7 @@ class TestStudentOverseaProgramDetail(unittest.TestCase):
         aa = cls.a.outside_consultants_login(cls.uri)
         cls.token = aa['body']['token']
         cls.memberId = aa['body']['memberid']
-        country_info = test_get_resource_country_list(cls.s, cls.uri, cls.token, cls.memberId, cls.platform)
+        country_info = resource_country_list(cls.s, cls.uri, cls.token, cls.memberId, cls.platform)
         countryId = str(country_info[0][1])
         countryName = country_info[1][1]
         school_info = test_get_school_by_country_id(cls.s, cls.uri, countryId)
@@ -31,7 +31,11 @@ class TestStudentOverseaProgramDetail(unittest.TestCase):
         school_selection_info = test_oversea_program_update_school_selection(cls.s,cls.uri,cls.token,cls.memberId,cls.platform,countryId,countryName,schoolId,schoolName,resourceId2)
         cls.chooseId = school_selection_info[0]
 
-    def test_oversea_program_school_selection_detail(self):   # 根据选校id查询选校详情信息
+    def test_oversea_program_school_selection_detail(self):
+        '''
+        选校建议详情，根据选校id查询选校详情信息
+        :return: 选校建议详情信息
+        '''
         url = "/overseaProgram/schoolSelectionDetail"
         headers = {
             "token": self.token,
@@ -43,8 +47,9 @@ class TestStudentOverseaProgramDetail(unittest.TestCase):
         }
         response = requests.post(url=self.uri+url, headers=headers, data=data)
         result = json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2)
-        print("请求信息：", self.uri+url, headers, data)
-        print("响应信息", result)
+
+        logging.info("请求信息：{0}{1}{2}".format(self.uri+url, headers, data))
+        logging.info("响应信息:{0}".format(result))
 
         detail = json.dumps(response.json()['body']['detail'], ensure_ascii=False, sort_keys=True, indent=2)
 
@@ -53,9 +58,9 @@ class TestStudentOverseaProgramDetail(unittest.TestCase):
             try:
                 self.assertIn("schoolname", result),
                 self.assertIn("majorname", result)
-                print("选校建议详情为：", detail)
+                logging.info("选校建议详情为：", detail)
             except AssertionError as error:
-                print(error)
+                logging.error(error)
 
 
 if __name__ == "__main__":

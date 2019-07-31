@@ -1,18 +1,14 @@
 import unittest
-import requests
-import json
-import jsonpath
 import logging
-import random
-from lib.login import *
-from data import data
+from common.login import *
+from data_file import default_data
 from students.student import *
 
 
 class TestStudentAddResource(unittest.TestCase):
     s = requests.session()
-    uri = data.baseUrl
-    platform = data.platform
+    uri = default_data.baseUrl
+    platform = default_data.platform
 
     @classmethod
     def setUpClass(cls):
@@ -20,10 +16,14 @@ class TestStudentAddResource(unittest.TestCase):
         aa = cls.a.outside_consultants_login(cls.uri)
         cls.token = aa['body']['token']
         cls.memberid = aa['body']['memberid']
-        coutryId_all = test_get_resource_country_list(cls.s, cls.uri, cls.token, cls.memberid, cls.platform)
+        coutryId_all = resource_country_list(cls.s, cls.uri, cls.token, cls.memberid, cls.platform)
         cls.countryId = coutryId_all[0]
 
     def test_student_add_resource(self):
+        '''
+        添加学生接口
+        :return: 添加的学生信息
+        '''
         url = "/counselor/addResource"
         headers = {
             "token": self.token,
@@ -39,10 +39,10 @@ class TestStudentAddResource(unittest.TestCase):
             "remark": "自动化测试脚本添加"
         }
         response = requests.post(url=self.uri+url, headers=headers, data=data)
-        print("请求信息：", url, headers, data)
-        print("响应信息：", response.text)
-        print("录入的学生信息为", data)
-        return data
+
+        logging.info("请求信息：{0}{1}{2}".format(self.uri+url, headers, data))
+        logging.info("响应信息：{0}".format(response.json()))
+        logging.info("录入的学生信息为", data)
 
 
 if __name__ == "__main__":

@@ -1,16 +1,14 @@
 import unittest
-import requests
-import jsonpath
 import logging
-from lib.login import *
-from data import data
+from common.login import *
+from data_file import default_data
 from student import *
 
 
 class TestStudentOverseaProgramShareDetail(unittest.TestCase):
     s = requests.session()
-    uri = data.baseUrl
-    platform = data.platform
+    uri = default_data.baseUrl
+    platform = default_data.platform
 
     @classmethod
     def setUpClass(cls):
@@ -32,6 +30,10 @@ class TestStudentOverseaProgramShareDetail(unittest.TestCase):
         cls.f = cls.memberid
 
     def test_oversea_program_share_detail(self):
+        '''
+        分享留学规划方案
+        :return:
+        '''
         url = "/overseaProgram/shareDetail"
         headers = {
             "token": self.token,
@@ -48,8 +50,8 @@ class TestStudentOverseaProgramShareDetail(unittest.TestCase):
         response = requests.get(url=self.uri+url, headers=headers, params=params)
         result = json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2)
 
-        print("请求url:{0},请求头：{1}，参数值：{2}".format(url, headers, params))
-        print("响应体信息：{0}".format(result))
+        logging.info("请求信息：{0}{1}{2}".format(self.uri+url, headers, params))
+        logging.info("响应信息：{0}".format(result))
 
         # 断言：新增院校中文schoolchinesename、英文schoolenglishname字段，专业英文、中文majorname 字段，顾问详情expertDetail，国家优势advantageDetail；
         if result is not None:
@@ -60,7 +62,7 @@ class TestStudentOverseaProgramShareDetail(unittest.TestCase):
                 self.assertIn("expertDetail", result),
                 self.assertIn("advantageDetail", result),
             except AssertionError as error:
-                print(error)
+                logging.error(error)
 
 
 if __name__ == "__main__":

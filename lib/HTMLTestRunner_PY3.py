@@ -326,7 +326,7 @@ class Template_mixin(object):
             legend: {
                 orient: 'vertical',
                 left: 'left',
-                data: ['通过','失败','错误']
+                data_file: ['通过','失败','错误']
             },
             series : [
                 {
@@ -334,7 +334,7 @@ class Template_mixin(object):
                     type: 'pie',
                     radius : '60%%',
                     center: ['50%%', '60%%'],
-                    data:[
+                    data_file:[
                         {value:%(Pass)s, name:'通过'},
                         {value:%(fail)s, name:'失败'},
                         {value:%(error)s, name:'错误'}

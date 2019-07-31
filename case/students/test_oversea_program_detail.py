@@ -1,17 +1,14 @@
 import unittest
-import requests
-import json
-import jsonpath
 import logging
-from lib.login import *
-from data import data
+from common.login import *
+from data_file import default_data
 from student import *
 
 
 class TestStudentOverseaProgramDetail(unittest.TestCase):
     s = requests.session()
-    uri = data.baseUrl
-    platform = data.platform
+    uri = default_data.baseUrl
+    platform = default_data.platform
 
     @classmethod
     def setUpClass(cls):
@@ -27,8 +24,11 @@ class TestStudentOverseaProgramDetail(unittest.TestCase):
         cls.schemeId = list_info[1]
         cls.schemeMemberId = list_info[2]
 
-    # 根据方案id+顾问id 查询留学规划方案详情
     def test_get_oversea_program_detail(self):
+        '''
+        留学规划方案详情接口，根据方案id+顾问id 查询留学规划方案详情
+        :return: 留学规划方案详情信息
+        '''
         url = "/overseaProgram/detail"
         headers = {
             "token": self.token,
@@ -43,8 +43,8 @@ class TestStudentOverseaProgramDetail(unittest.TestCase):
         response = requests.post(url=self.uri+url, headers=headers, data=data)
         result = json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2)
 
-        print("请求信息：", url, headers, data)
-        print("响应信息：", result)
+        logging.info("请求信息：{0}{1}{2}".format(self.uri + url, headers, data))
+        logging.info("响应信息：{0}".format(result))
 
         # 断言：新增院校schoolname和专业名称majorname拼接中英文；
         if result is not None:
@@ -52,7 +52,7 @@ class TestStudentOverseaProgramDetail(unittest.TestCase):
                 self.assertIn("schoolname", result),
                 self.assertIn("majorname", result)
             except AssertionError as error:
-                print(error)
+                logging.error(error)
 
 
 if __name__ == "__main__":

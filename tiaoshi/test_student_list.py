@@ -3,14 +3,14 @@ import requests
 import json
 
 from .login import *
-from data import data
+from data_file import default_data
 
 
 class TestStudentList(unittest.TestCase):
 
     s = requests.session()
-    platform = data.platform
-    uri = data.baseUrl
+    platform = default_data.platform
+    uri = default_data.baseUrl
 
     @classmethod
     def setUpClass(cls):

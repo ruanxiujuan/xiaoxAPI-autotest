@@ -2,26 +2,8 @@ import random
 import urllib3
 import jsonpath
 import requests
-import json
-
+from common.resource_country import resource_country_list
 urllib3.disable_warnings()
-
-
-# 获取资源系统国家列表并返回国家id
-def test_get_resource_country_list(s, uri, token, memberId, platform):
-    url = "/country/getResourceCountryList"
-    headers = {
-        "token": token,
-        "memberId": memberId,
-        "platform": platform
-    }
-    response = s.get(url=uri + url, headers=headers)
-
-    countryId = jsonpath.jsonpath(response.json(), "$.body.resourceCountryList[*].id")
-    countryName = jsonpath.jsonpath(response.json(), "$.body.resourceCountryList[*].name")
-    # print(countryId)
-
-    return countryId, countryName
 
 
     # 我的学生-录学生
@@ -37,7 +19,7 @@ def test_student_add_resource(s, uri, token, memberId, platform):
         "resourceType": "1",  # 资源类型(0:名片，1:资源)
         "studentName": "autotest{0}".format(random.randint(1, 100)),
         "tel": "130{0}".format(random.randint(11110001, 11119999)),
-        "countryId": test_get_resource_country_list(s, uri, token, memberId, platform),
+        "countryId": resource_country_list(s, uri, token, memberId, platform)[0],
         "remark": "自动化测试脚本添加"
     }
     response = s.post(url=uri + url, headers=headers, data=data)
@@ -57,7 +39,7 @@ def test_student_list_status_0(s, uri, token, memberId, platform, studentName):
         "studentName": studentName,
         "status": "0",  # 全部列表
         "startIndex": "0",
-        "pageSize": "50"
+        "pageSize": "10"
     }
     response = s.post(url=uri + url, headers=headers, data=data)
     resourceId = jsonpath.jsonpath(response.json(), "$.body.list[*].resourceId")
@@ -116,7 +98,7 @@ def test_get_major_by_school_id(s, uri, token, memberId, platform, schoolId):
 
     return majorId, majorName
 
-
+#
 def test_oversea_program_update_school_selection(s, uri, token, memberId, platform, countryId, countryName, schoolId, schoolName, resourceId):
     url = "/overseaProgram/updateSchoolSelection"
     headers = {
@@ -137,8 +119,8 @@ def test_oversea_program_update_school_selection(s, uri, token, memberId, platfo
         "schemeId": "0",  # 方案编号:新增传0,修改传id值
     }
     response = s.post(url=uri + url, headers=headers, data=data)
-    chooseId = jsonpath.jsonpath(response.json(), "$.body.data.chooseid")
-    schemeId = jsonpath.jsonpath(response.json(), "$.body.data.schemeid")
+    chooseId = jsonpath.jsonpath(response.json(), "$.body.data_file.chooseid")
+    schemeId = jsonpath.jsonpath(response.json(), "$.body.data_file.schemeid")
     return (chooseId, schemeId)
 
 

@@ -1,16 +1,14 @@
 import unittest
-import requests
-import jsonpath
 from rob_order.get_rob_resources_list import get_rob_resources_list
-from lib.login import *
-from lib.smart_counselor_db import *
-from data import data
+from common.login import *
+from common.smart_counselor_db import *
+from data_file import default_data
 
 
 class TestRob(unittest.TestCase):
     s = requests.session()
-    uri = data.baseUrl
-    platform = data.platform
+    uri = default_data.baseUrl
+    platform = default_data.platform
 
     @classmethod
     def setUpClass(cls):
@@ -23,8 +21,8 @@ class TestRob(unittest.TestCase):
         # 抢单列表
         rob_list = get_rob_resources_list(cls.s, cls.uri, cls.token, cls.memberid, cls.platform)
         # print(rob_list)
-        cls.logId = jsonpath.jsonpath(rob_list, '$.body.data.list[*].logId')
-        cls.resourceId = jsonpath.jsonpath(rob_list, '$.body.data.list[*].resourceId')
+        cls.logId = jsonpath.jsonpath(rob_list, '$.body.data_file.list[*].logId')
+        cls.resourceId = jsonpath.jsonpath(rob_list, '$.body.data_file.list[*].resourceId')
         # 创建数据库连接
         cls.conn = get_smart_counselor_db_connect()
 
@@ -50,7 +48,7 @@ class TestRob(unittest.TestCase):
             "resourceId": self.resourceId[-1]
         }
         response = requests.post(url=self.uri+url, headers=headers, data=data)
-        result = json.dumps(response.json(),ensure_ascii=False, sort_keys=True, indent=2)
+        result = json.dumps(response.json(), ensure_ascii=False, sort_keys=True, indent=2)
         code = jsonpath.jsonpath(response.json(), '$.body.code')
         message = jsonpath.jsonpath(response.json(), '$.body.message')
         resourceId1 = jsonpath.jsonpath(response.json(), '$.body.resourceId')

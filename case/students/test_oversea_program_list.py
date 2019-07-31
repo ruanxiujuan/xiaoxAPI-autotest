@@ -1,17 +1,14 @@
 import unittest
-import requests
-import json
-import jsonpath
 import logging
-from lib.login import *
-from data import data
+from common.login import *
+from data_file import default_data
 from student import *
 
 
 class TestStudentOverseaProgramList(unittest.TestCase):
     s = requests.session()
-    uri = data.baseUrl
-    platform = data.platform
+    uri = default_data.baseUrl
+    platform = default_data.platform
 
     @classmethod
     def setUpClass(cls):
@@ -23,8 +20,11 @@ class TestStudentOverseaProgramList(unittest.TestCase):
         resourceId = test_student_list_status_0(cls.s, cls.uri, cls.token, cls.memberId, cls.platform, cls.studentName)[0]
         cls.resourceId = test_student_update_oversea_program(cls.s, cls.uri, cls.token, cls.memberId, cls.platform, resourceId)
 
-    # 根据学生资源id获取学生留学规划方案
     def test_oversea_program_list(self):
+        '''
+        留学规划方案接口，根据学生资源id获取学生留学规划方案
+        :return: 留学规划方案列表信息
+        '''
         url = "/overseaProgram/list"
         headers = {
             "token": self.token,
@@ -40,10 +40,8 @@ class TestStudentOverseaProgramList(unittest.TestCase):
         detail = json.dumps(response.json()['body']['list'], ensure_ascii=False, sort_keys=True, indent=2)
         list = json.dumps(response.json()['body']['list'], ensure_ascii=False, sort_keys=True, indent=2)
 
-        print("请求信息：", url, headers, data)
-        print("响应信息", detail)
-
-
+        logging.info("请求信息：{0}{1}{2}".format(self.uri + url, headers, data))
+        logging.info("响应信息:{}".format(detail))
 
         # 断言：新增是否文件isfile、文件名filename、文件地址filepath字段
         if list is not None:
@@ -52,7 +50,7 @@ class TestStudentOverseaProgramList(unittest.TestCase):
                 self.assertIn("filename", list),
                 self.assertIn("filepath", list)
             except AssertionError as error:
-                print(error)
+                logging.error(error)
 
 
 if __name__ == "__main__":
