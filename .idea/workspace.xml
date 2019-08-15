@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4589a1a-a980-4a1d-99ab-cb14e2106a2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/HTMLTestReportCN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/HTMLTestReportCN.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/HTMLTestReportCN.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +21,7 @@
     <SUITE FILE_PATH="coverage/xiaoxiAPI$Unittests_for_test_student_detail_info_TestStudentDetailInfo_test_student_detail_info_type1.coverage" NAME="Unittests for test_student_detail_info.TestStudentDetailInfo.test_student_detail_info_type1 Coverage Results" MODIFIED="1557392106012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/students" />
     <SUITE FILE_PATH="coverage/xiaoxiAPI$Unittests_in_test_oversea_program_share_Detail_py.coverage" NAME="Unittests in test_oversea_program_share_Detail.py Coverage Results" MODIFIED="1557369961665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/students" />
     <SUITE FILE_PATH="coverage/xiaoxiAPI$login.coverage" NAME="login Coverage Results" MODIFIED="1561442465591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
-    <SUITE FILE_PATH="coverage/xiaoxiAPI$run_main.coverage" NAME="run_main Coverage Results" MODIFIED="1565855612207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/xiaoxiAPI$run_main.coverage" NAME="run_main Coverage Results" MODIFIED="1565856003076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/xiaoxiAPI$product.coverage" NAME="product Coverage Results" MODIFIED="1562148789753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/product" />
     <SUITE FILE_PATH="coverage/xiaoxiAPI$school.coverage" NAME="school Coverage Results" MODIFIED="1562221486601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/school_query" />
     <SUITE FILE_PATH="coverage/xiaoxiAPI$Unittests_in_test_student_detail_info_py.coverage" NAME="Unittests in test_student_detail_info.py Coverage Results" MODIFIED="1561961943954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/students" />
@@ -131,18 +130,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="234">
+              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/HTMLTestReportCN.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="642" column="21" lean-forward="true" selection-start-line="642" selection-start-column="21" selection-end-line="642" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -172,6 +178,7 @@
       <find>logging.info</find>
       <find>test_student_list_status_0</find>
       <find>ini</find>
+      <find>概要</find>
     </findStrings>
     <replaceStrings>
       <replace>res</replace>
@@ -191,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/case/daka/test01_set_attend.py" />
         <option value="$PROJECT_DIR$/case/daka/test02_get_attend_by_id.py" />
         <option value="$PROJECT_DIR$/case/daka/set_attend.py" />
         <option value="$PROJECT_DIR$/case/punch_card/set_attend.py" />
@@ -242,6 +248,7 @@
         <option value="$PROJECT_DIR$/case/rob_order/test_rob_resource.py" />
         <option value="$PROJECT_DIR$/lib/HTMLTestReportCS.py" />
         <option value="$PROJECT_DIR$/run_main.py" />
+        <option value="$PROJECT_DIR$/lib/HTMLTestReportCN.py" />
       </list>
     </option>
   </component>
@@ -457,7 +464,7 @@
       <workItem from="1564476596100" duration="18583000" />
       <workItem from="1565076521068" duration="50769000" />
       <workItem from="1565572354118" duration="10098000" />
-      <workItem from="1565766322134" duration="18198000" />
+      <workItem from="1565766322134" duration="18574000" />
     </task>
     <servers />
   </component>
@@ -494,18 +501,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="450643000" />
+    <option name="totallyTimeSpent" value="451019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3474212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3474212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6738545" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34231806" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34231806" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -946,16 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/case/students/test_oversea_program_detail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1008,13 +1005,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/HTMLTestReportCN.py">
+    <entry file="file://$PROJECT_DIR$/report/report.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/run_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="234">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/HTMLTestReportCN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="642" column="21" lean-forward="true" selection-start-line="642" selection-start-column="21" selection-end-line="642" selection-end-column="21" />
         </state>
       </provider>
     </entry>
