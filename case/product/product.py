@@ -63,7 +63,7 @@ def apply_list(s, uri, platform, token, memberId):
 
 def product_list_default(s, uri, platform, token, memberId, countryIds, lineId, applyIds):
     '''
-    精选产品列表接口
+    精选产品列表接口，返回productCode
     :param s:
     :param uri:
     :param platform:

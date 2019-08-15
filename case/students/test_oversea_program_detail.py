@@ -17,7 +17,7 @@ class TestStudentOverseaProgramDetail(unittest.TestCase):
         cls.token = aa['body']['token']
         cls.memberid = aa['body']['memberid']
         cls.studentName = test_student_add_resource(cls.s, cls.uri, cls.token, cls.memberid, cls.platform)
-        resourceId1 = test_student_list_status_0(cls.s, cls.uri, cls.token, cls.memberid, cls.platform, cls.studentName)[0]
+        resourceId1 = test_student_list_status_0(cls.s, cls.uri, cls.token, cls.memberid, cls.platform)[0]
         resourceId2 = test_student_update_oversea_program(cls.s, cls.uri, cls.token, cls.memberid, cls.platform, resourceId1)
         list_info = test_oversea_program_list(cls.s, cls.uri, cls.token, cls.memberid, cls.platform, resourceId2)
         cls.resourceId = list_info[0]
