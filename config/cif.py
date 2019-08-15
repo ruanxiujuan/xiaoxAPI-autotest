@@ -6,7 +6,7 @@ import logging
 # 项目路径配置
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 项目根目录
 case_dir = os.path.join(base_dir, 'case')  # 用例目录
-data_dir = os.path.join(base_dir, 'data')  # 数据目录
+data_dir = os.path.join(base_dir, 'data_file')  # 数据目录
 log_dir = os.path.join(base_dir, 'logs')   # 日志目录
 report_dir = os.path.join(base_dir, 'report')  # 测试报告路径
 
@@ -24,7 +24,8 @@ report_description = "顾问端接口自动化测试报告"
 # 日志配置
 today = time.strftime("%Y%m%d", time.localtime(time.time()))
 console_handler = logging.StreamHandler()
-log_file = os.path.join(log_dir, "{}.log".format(today))
+# log_file = os.path.join(log_dir, "{}.log".format(today))
+log_file = os.path.join(log_dir, "log.txt")
 file_handler = logging.FileHandler(log_file, encoding="utf-8")
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s %(filename)s %(lineno)d %(funcName)s %(levelname)s %(message)s",
