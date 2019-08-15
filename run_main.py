@@ -1,6 +1,6 @@
 import unittest
 import logging
-from lib.HTMLTestRunner_PY3 import HTMLTestRunner
+from lib.HTMLTestReportCN import HTMLTestRunner
 from config.cif import case_dir, report_file, report_tile, report_description
 
 
