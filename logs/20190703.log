@@ -1,0 +1,622 @@
+2019-07-03 09:21:14,100 run_main.py 10 run_case INFO ======================测试开始=====================
+2019-07-03 09:21:15,175 test_call_record_list.py 43 test_call_record_list_type0 INFO 请求信息为：http://test-xiaoxapi.aoji.cn/callRecords/recordList{'platform': '3', 'token': 'OHnHc0cVVV7RiDGJ', 'memberId': 'G012463'}{'type': 0}
+2019-07-03 09:21:15,176 test_call_record_list.py 44 test_call_record_list_type0 INFO 响应信息为：{'head': {'code': 0, 'message': '操作成功'}, 'body': {'code': 0, 'message': '操作成功', 'list': [{'studentName': '小白01', 'createTime': 1560926037000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13402270001', 'resourceId': 2029812, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552830, 'talkTime': '2019/6/19', 'groupId': '@TGS#22WLUX3F2', 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120298120515203000', 'signtype': 2, 'pid': None}, {'studentName': '小白01', 'createTime': 1560925931000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13402270001', 'resourceId': 2029818, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552830, 'talkTime': '2019/6/19', 'groupId': '@TGS#2A2LUX3FE', 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120298180516100625', 'signtype': 2, 'pid': None}, {'studentName': '0617名片', 'createTime': 1560925542000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13106170001', 'resourceId': 2030240, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553347, 'talkTime': '2019/6/19', 'groupId': '@TGS#2WDJT35FG', 'resourceStatus': 2, 'ifsignable': 0, 'sid': 'T120302400619101707', 'signtype': 2, 'pid': None}, {'studentName': '0617名片', 'createTime': 1560844136000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13106170001', 'resourceId': 2030201, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553347, 'talkTime': '2019/6/18', 'groupId': '@TGS#2CYRKY5FN', 'resourceStatus': 4, 'ifsignable': 0, 'sid': 'T120302010617141416', 'signtype': 2, 'pid': None}, {'studentName': '0617名片', 'createTime': 1560843957000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13106170001', 'resourceId': 2030201, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553347, 'talkTime': '2019/6/18', 'groupId': '@TGS#2CYRKY5FN', 'resourceStatus': 4, 'ifsignable': 0, 'sid': 'T120302010617141416', 'signtype': 2, 'pid': None}, {'studentName': '618录学生', 'createTime': 1560843891000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13006180001', 'resourceId': 2030225, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553352, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 0, 'ifsignable': 1, 'sid': None, 'signtype': 0, 'pid': None}, {'studentName': '0530外部订单', 'createTime': 1560841813000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13105300001', 'resourceId': 2029983, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553252, 'talkTime': '2019/6/18', 'groupId': '@TGS#2QLASU4FA', 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120299830530170749', 'signtype': 2, 'pid': None}, {'studentName': '测试录学生', 'createTime': 1560841583000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13105090001', 'resourceId': 2029724, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553074, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 0, 'ifsignable': 1, 'sid': None, 'signtype': 0, 'pid': None}, {'studentName': '张三', 'createTime': 1560841470000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '2', 'resourceId': 2030224, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552184, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 0, 'ifsignable': 1, 'sid': None, 'signtype': 0, 'pid': None}, {'studentName': '名片签约', 'createTime': 1560840626000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13106170003', 'resourceId': 2030200, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553348, 'talkTime': '2019/6/18', 'groupId': '@TGS#2DMMBY5FT', 'resourceStatus': 4, 'ifsignable': 0, 'sid': 'T120302000617134916', 'signtype': 2, 'pid': None}, {'studentName': '0530外部订单', 'createTime': 1560840234000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13105300001', 'resourceId': 2029983, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553252, 'talkTime': '2019/6/18', 'groupId': '@TGS#2QLASU4FA', 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120299830530170749', 'signtype': 2, 'pid': None}, {'studentName': '小白02', 'createTime': 1560840206000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13402280002', 'resourceId': 2029277, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552836, 'talkTime': '2019/6/18', 'groupId': '@TGS#22DBBUXFM', 'resourceStatus': 4, 'ifsignable': 0, 'sid': 'T120292770312171410', 'signtype': 2, 'pid': None}, {'studentName': '测试10', 'createTime': 1560840020000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '18500000010', 'resourceId': 2029967, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552660, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120299670603170054', 'signtype': 2, 'pid': None}, {'studentName': '张三', 'createTime': 1560839968000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '2', 'resourceId': 2030224, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552184, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 0, 'ifsignable': 1, 'sid': None, 'signtype': 0, 'pid': None}]}}
+2019-07-03 09:21:15,180 test_call_record_list.py 56 test_call_record_list_type0 INFO 所有通话记录为：14
+2019-07-03 09:21:15,180 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '小白01', 'createTime': 1560926037000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13402270001', 'resourceId': 2029812, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552830, 'talkTime': '2019/6/19', 'groupId': '@TGS#22WLUX3F2', 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120298120515203000', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,180 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '小白01', 'createTime': 1560925931000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13402270001', 'resourceId': 2029818, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552830, 'talkTime': '2019/6/19', 'groupId': '@TGS#2A2LUX3FE', 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120298180516100625', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,181 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '0617名片', 'createTime': 1560925542000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13106170001', 'resourceId': 2030240, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553347, 'talkTime': '2019/6/19', 'groupId': '@TGS#2WDJT35FG', 'resourceStatus': 2, 'ifsignable': 0, 'sid': 'T120302400619101707', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,181 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '0617名片', 'createTime': 1560844136000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13106170001', 'resourceId': 2030201, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553347, 'talkTime': '2019/6/18', 'groupId': '@TGS#2CYRKY5FN', 'resourceStatus': 4, 'ifsignable': 0, 'sid': 'T120302010617141416', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,181 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '0617名片', 'createTime': 1560843957000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13106170001', 'resourceId': 2030201, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553347, 'talkTime': '2019/6/18', 'groupId': '@TGS#2CYRKY5FN', 'resourceStatus': 4, 'ifsignable': 0, 'sid': 'T120302010617141416', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,181 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '618录学生', 'createTime': 1560843891000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13006180001', 'resourceId': 2030225, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553352, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 0, 'ifsignable': 1, 'sid': None, 'signtype': 0, 'pid': None}
+2019-07-03 09:21:15,182 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '0530外部订单', 'createTime': 1560841813000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13105300001', 'resourceId': 2029983, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553252, 'talkTime': '2019/6/18', 'groupId': '@TGS#2QLASU4FA', 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120299830530170749', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,182 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '测试录学生', 'createTime': 1560841583000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13105090001', 'resourceId': 2029724, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553074, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 0, 'ifsignable': 1, 'sid': None, 'signtype': 0, 'pid': None}
+2019-07-03 09:21:15,182 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '张三', 'createTime': 1560841470000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '2', 'resourceId': 2030224, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552184, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 0, 'ifsignable': 1, 'sid': None, 'signtype': 0, 'pid': None}
+2019-07-03 09:21:15,182 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '名片签约', 'createTime': 1560840626000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13106170003', 'resourceId': 2030200, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553348, 'talkTime': '2019/6/18', 'groupId': '@TGS#2DMMBY5FT', 'resourceStatus': 4, 'ifsignable': 0, 'sid': 'T120302000617134916', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,182 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '0530外部订单', 'createTime': 1560840234000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13105300001', 'resourceId': 2029983, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 553252, 'talkTime': '2019/6/18', 'groupId': '@TGS#2QLASU4FA', 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120299830530170749', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,182 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '小白02', 'createTime': 1560840206000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '13402280002', 'resourceId': 2029277, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552836, 'talkTime': '2019/6/18', 'groupId': '@TGS#22DBBUXFM', 'resourceStatus': 4, 'ifsignable': 0, 'sid': 'T120292770312171410', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,183 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '测试10', 'createTime': 1560840020000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '18500000010', 'resourceId': 2029967, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552660, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 3, 'ifsignable': 0, 'sid': 'T120299670603170054', 'signtype': 2, 'pid': None}
+2019-07-03 09:21:15,183 test_call_record_list.py 58 test_call_record_list_type0 INFO {'studentName': '张三', 'createTime': 1560839968000, 'callform': 0, 'answerseconds': 0, 'phoneNum': '2', 'resourceId': 2030224, 'type': 0, 'calltype': 0, 'userid': 'G012463', 'rootResourceId': 552184, 'talkTime': '2019/6/18', 'groupId': None, 'resourceStatus': 0, 'ifsignable': 1, 'sid': None, 'signtype': 0, 'pid': None}
+2019-07-03 09:21:15,215 test_call_record_list.py 81 test_call_record_list_type1 INFO 请求信息为：http://test-xiaoxapi.aoji.cn/callRecords/recordList{'platform': '3', 'token': 'OHnHc0cVVV7RiDGJ', 'memberId': 'G012463'}{'type': 1}
+2019-07-03 09:21:15,215 test_call_record_list.py 82 test_call_record_list_type1 INFO 响应信息为：{'head': {'code': 0, 'message': '操作成功'}, 'body': {'code': 0, 'message': '操作成功', 'list': []}}
+2019-07-03 09:21:15,215 test_call_record_list.py 90 test_call_record_list_type1 INFO 暂无通话
+2019-07-03 09:21:15,293 test_call_unread_count.py 38 test_get_unread_count INFO 请求信息为：http://test-xiaoxapi.aoji.cn/callRecords/unReadCount{'platform': '3', 'token': 'jxMPf7UniqNkIuy0', 'memberId': 'G012463'}<module 'data.data' from 'D:\\xiaoxiAPI\\data\\data.py'>
+2019-07-03 09:21:15,294 test_call_unread_count.py 39 test_get_unread_count INFO 响应信息为：{'head': {'code': 0, 'message': '操作成功'}, 'body': {'code': 0, 'message': '操作成功', 'unReadCount': 0}}
+2019-07-03 09:21:15,294 test_call_unread_count.py 48 test_get_unread_count INFO 无新的未接通话！
+2019-07-03 09:21:15,357 test_apply_list.py 38 test_product_apply_list_default INFO 请求信息：http://test-xiaoxapi.aoji.cn/product/applyListV214{'platform': '3', 'token': 'OESxqhCGlJSHUdif', 'memberId': 'G012463'}
+2019-07-03 09:21:15,357 test_apply_list.py 39 test_product_apply_list_default INFO 响应信息：{
+  "body": {
+    "code": 0,
+    "countryList": [
+      {
+        "countryid": 65,
+        "countryname": "澳大利亚",
+        "imgUrl": "https://xiaoxi-cdn.globeedu.com/nationalFlag/au.png"
+      },
+      {
+        "countryid": 2,
+        "countryname": "英国",
+        "imgUrl": "https://xiaoxi-cdn.globeedu.com/nationalFlag/uk.png"
+      },
+      {
+        "countryid": 18,
+        "countryname": "美国",
+        "imgUrl": "https://xiaoxi-cdn.globeedu.com/nationalFlag/us.png"
+      },
+      {
+        "countryid": 3,
+        "countryname": "加拿大",
+        "imgUrl": "https://xiaoxi-cdn.globeedu.com/nationalFlag/ca.png"
+      },
+      {
+        "countryid": 1,
+        "countryname": "新西兰",
+        "imgUrl": "https://xiaoxi-cdn.globeedu.com/nationalFlag/nz.png"
+      },
+      {
+        "countryid": 1001,
+        "countryname": "亚洲",
+        "imgUrl": "https://xiaoxi-cdn.globeedu.com/nationalFlag/asia.png"
+      },
+      {
+        "countryid": 1003,
+        "countryname": "欧洲",
+        "imgUrl": "https://xiaoxi-cdn.globeedu.com/nationalFlag/ou.png"
+      }
+    ],
+    "defaultApplyId": [
+      1
+    ],
+    "defaultCountryId": [
+      65
+    ],
+    "defaultLineId": [
+      1
+    ],
+    "diclines": [
+      {
+        "lineId": 1,
+        "lineName": "留学",
+        "services": [
+          {
+            "applyid": 1,
+            "applyname": "全程服务"
+          },
+          {
+            "applyid": 3,
+            "applyname": "签证服务"
+          },
+          {
+            "applyid": 5,
+            "applyname": "增值服务"
+          },
+          {
+            "applyid": 6,
+            "applyname": "文书服务"
+          }
+        ]
+      },
+      {
+        "lineId": 5,
+        "lineName": "语言培训课程",
+        "services": [
+          {
+            "applyid": 9,
+            "applyname": "托福"
+          },
+          {
+            "applyid": 10,
+            "applyname": "雅思"
+          },
+          {
+            "applyid": 11,
+            "applyname": "SAT"
+          },
+          {
+            "applyid": 12,
+            "applyname": "GRE"
+          },
+          {
+            "applyid": 15,
+            "applyname": "基础英语"
+          },
+          {
+            "applyid": 16,
+            "applyname": "海外生存英语"
+          },
+          {
+            "applyid": 17,
+            "applyname": "Toefl Junior"
+          },
+          {
+            "applyid": 18,
+            "applyname": "SSAT"
+          },
+          {
+            "applyid": 19,
+            "applyname": "ACT"
+          },
+          {
+            "applyid": 20,
+            "applyname": "SAT/ACT"
+          },
+          {
+            "applyid": 21,
+            "applyname": "SAT-II"
+          },
+          {
+            "applyid": 22,
+            "applyname": "iTEP"
+          },
+          {
+            "applyid": 23,
+            "applyname": "GMAT"
+          },
+          {
+            "applyid": 24,
+            "applyname": "GRE/GMAT"
+          },
+          {
+            "applyid": 25,
+            "applyname": "GCSE"
+          },
+          {
+            "applyid": 26,
+            "applyname": "AP"
+          },
+          {
+            "applyid": 27,
+            "applyname": "A-level"
+          },
+          {
+            "applyid": 28,
+            "applyname": "留学考试培训"
+          }
+        ]
+      },
+      {
+        "lineId": 6,
+        "lineName": "海外游学",
+        "services": [
+          {
+            "applyid": 13,
+            "applyname": "海外游学"
+          }
+        ]
+      },
+      {
+        "lineId": 10,
+        "lineName": "背景提升",
+        "services": [
+          {
+            "applyid": 35,
+            "applyname": "科研产品"
+          },
+          {
+            "applyid": 36,
+            "applyname": "实习产品"
+          },
+          {
+            "applyid": 37,
+            "applyname": "线上实训"
+          },
+          {
+            "applyid": 38,
+            "applyname": "学术论文"
+          }
+        ]
+      },
+      {
+        "lineId": 11,
+        "lineName": "海外支付",
+        "services": [
+          {
+            "applyid": 39,
+            "applyname": "海外支付"
+          }
+        ]
+      },
+      {
+        "lineId": 12,
+        "lineName": "艺术培训",
+        "services": [
+          {
+            "applyid": 41,
+            "applyname": "艺术培训"
+          }
+        ]
+      }
+    ],
+    "message": "操作成功"
+  },
+  "head": {
+    "code": 0,
+    "message": "操作成功"
+  }
+}
+2019-07-03 09:21:15,604 test_get_rob_resources_list.py 36 test_get_rob_resources_list INFO 请求url:http://test-xiaoxapi.aoji.cn/rob/getRobResources,请求头{'platform': '3', 'token': 'bCTLeZgKQEU1CJIt', 'memberId': 'G012463'}
+2019-07-03 09:21:15,605 test_get_rob_resources_list.py 37 test_get_rob_resources_list INFO 响应体:{"head":{"code":0,"message":"操作成功"},"body":{"code":0,"data":{"remainingTime":526,"list":[{"logId":5089,"resourceId":2030206,"name":"小白01","service":"留学","countryName":"美国","areaName":"北京","status":0},{"logId":5089,"resourceId":2029390,"name":"d10","service":"留学","countryName":"日本","areaName":"广西壮族自治区","status":0},{"logId":5089,"resourceId":2029382,"name":"ceshi 代理","service":"留学","countryName":"马来西亚","areaName":"香港特别行政区","status":0}],"current":{"id":null,"startTime":1562115600000,"endTime":1562117400000},"next":null},"message":"操作成功"}}
+2019-07-03 09:21:15,605 test_get_rob_resources_list.py 55 test_get_rob_resources_list INFO 抢单列表为新资源[{'logId': 5089, 'resourceId': 2030206, 'name': '小白01', 'service': '留学', 'countryName': '美国', 'areaName': '北京', 'status': 0}, {'logId': 5089, 'resourceId': 2029390, 'name': 'd10', 'service': '留学', 'countryName': '日本', 'areaName': '广西壮族自治区', 'status': 0}, {'logId': 5089, 'resourceId': 2029382, 'name': 'ceshi 代理', 'service': '留学', 'countryName': '马来西亚', 'areaName': '香港特别行政区', 'status': 0}],本轮倒计时为[526]
+2019-07-03 09:21:15,606 test_get_rob_resources_list.py 55 test_get_rob_resources_list INFO 抢单列表为新资源[{'logId': 5089, 'resourceId': 2030206, 'name': '小白01', 'service': '留学', 'countryName': '美国', 'areaName': '北京', 'status': 0}, {'logId': 5089, 'resourceId': 2029390, 'name': 'd10', 'service': '留学', 'countryName': '日本', 'areaName': '广西壮族自治区', 'status': 0}, {'logId': 5089, 'resourceId': 2029382, 'name': 'ceshi 代理', 'service': '留学', 'countryName': '马来西亚', 'areaName': '香港特别行政区', 'status': 0}],本轮倒计时为[526]
+2019-07-03 09:21:15,606 test_get_rob_resources_list.py 55 test_get_rob_resources_list INFO 抢单列表为新资源[{'logId': 5089, 'resourceId': 2030206, 'name': '小白01', 'service': '留学', 'countryName': '美国', 'areaName': '北京', 'status': 0}, {'logId': 5089, 'resourceId': 2029390, 'name': 'd10', 'service': '留学', 'countryName': '日本', 'areaName': '广西壮族自治区', 'status': 0}, {'logId': 5089, 'resourceId': 2029382, 'name': 'ceshi 代理', 'service': '留学', 'countryName': '马来西亚', 'areaName': '香港特别行政区', 'status': 0}],本轮倒计时为[526]
+2019-07-03 09:21:15,964 smart_counselor_db.py 18 query_db INFO 执行查询sql:SELECT * FROM rob_resource_detail WHERE member_id = 'G012463' 
+2019-07-03 09:21:15,964 smart_counselor_db.py 19 query_db INFO 查询结果为：()
+2019-07-03 09:21:16,064 test_rob_resource.py 58 test_rob_resource INFO 请求url:/rob/robResource,请求头{'platform': '3', 'token': 'CrhPCvbIuUwr3IBt', 'memberId': 'G012463'},请求体{'logId': 5089, 'resourceId': 2029382}
+2019-07-03 09:21:16,064 test_rob_resource.py 59 test_rob_resource INFO 响应体:{"head":{"code":0,"message":"操作成功"},"body":{"code":-1,"message":"顾问服务国家列表中不包含当前国家线"}}
+2019-07-03 09:21:16,064 test_rob_resource.py 81 test_rob_resource INFO 其它原因
+2019-07-03 09:21:17,210 test_add_student.py 47 test_student_add_resource INFO 请求信息：http://test-xiaoxapi.aoji.cn/counselor/addResource{'token': 'IncHwipJFvLkm8R9', 'memberId': 'G012463', 'platform': '3', 'vcode': '21300'}{'resourceType': '1', 'studentName': 'autotest74', 'tel': '13011110452', 'countryId': [10, 12, 20, 11, 13, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 21, 22, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 40, 41, 74, 75, 77, 83], 'remark': '自动化测试脚本添加'}
+2019-07-03 09:21:17,210 test_add_student.py 48 test_student_add_resource INFO 响应信息：{'head': {'code': 0, 'message': '操作成功'}, 'body': {'code': 0, 'message': None}}
+2019-07-03 09:21:17,211 test_add_student.py 49 test_student_add_resource INFO 录入的学生信息为
+2019-07-03 09:21:18,530 test_oversea_program_detail.py 49 test_get_oversea_program_detail INFO 请求信息：http://test-xiaoxapi.aoji.cn/overseaProgram/detail{'token': '3U8FNAYEMe0XP247', 'memberId': 'G012463', 'platform': '3'}{'resourceId': 2030324, 'schemeId': [701], 'schemeMemberId': ['G012463']}
+2019-07-03 09:21:18,531 test_oversea_program_detail.py 50 test_get_oversea_program_detail INFO 响应信息：{
+  "body": {
+    "code": 0,
+    "detail": {
+      "intentionDetail": null,
+      "nameDetail": {
+        "chooseadviceinfo": null,
+        "filename": "",
+        "filepath": "",
+        "isableedit": 1,
+        "isfile": 0,
+        "isshowbaseinfo": 0,
+        "isshowstudyabroad": 0,
+        "lastinfo": null,
+        "name": "自动化测试新增2030324的留学规划方案",
+        "schemeid": 701,
+        "startinfo": null,
+        "status": 1
+      },
+      "r": "98747F79D8307130DCB78E33DBB6940B",
+      "selectionList": [],
+      "studentDetail": {
+        "abledelaytime": "1564622478000",
+        "accepttime": "1562116878000",
+        "area": 0,
+        "areaname": "",
+        "countryname": "马来西亚",
+        "customermobile": "13426475666",
+        "customername": "用户G012449",
+        "finishtime": "1564881678000",
+        "gender": 0,
+        "grade": 0,
+        "graduationtype": 0,
+        "ifHaveProgram": 1,
+        "inviteaddress": "",
+        "inviteremark": "",
+        "invitetime": "",
+        "isabledelay": 0,
+        "isinvite": 0,
+        "isinviteuser": "",
+        "isvisit": 0,
+        "major": null,
+        "mobile": "13011112572",
+        "name": "autotest36",
+        "remark": null,
+        "resourceid": 2030324,
+        "resourcemark": "自动化测试脚本添加",
+        "schoolname": null,
+        "schooltype": 0,
+        "score": null,
+        "scoregk": 0.0,
+        "scoretype": 0,
+        "sid": "",
+        "snumber": "G012463",
+        "source": "顾问自有资源",
+        "studentimageurl": "",
+        "studylist": [],
+        "userinforemark": null,
+        "wechat": ""
+      },
+      "timeDetail": null
+    },
+    "message": "操作成功"
+  },
+  "head": {
+    "code": 0,
+    "message": "操作成功"
+  }
+}
+2019-07-03 09:21:18,531 test_oversea_program_detail.py 58 test_get_oversea_program_detail ERROR 'majorname' not found in '{\n  "body": {\n    "code": 0,\n    "detail": {\n      "intentionDetail": null,\n      "nameDetail": {\n        "chooseadviceinfo": null,\n        "filename": "",\n        "filepath": "",\n        "isableedit": 1,\n        "isfile": 0,\n        "isshowbaseinfo": 0,\n        "isshowstudyabroad": 0,\n        "lastinfo": null,\n        "name": "自动化测试新增2030324的留学规划方案",\n        "schemeid": 701,\n        "startinfo": null,\n        "status": 1\n      },\n      "r": "98747F79D8307130DCB78E33DBB6940B",\n      "selectionList": [],\n      "studentDetail": {\n        "abledelaytime": "1564622478000",\n        "accepttime": "1562116878000",\n        "area": 0,\n        "areaname": "",\n        "countryname": "马来西亚",\n        "customermobile": "13426475666",\n        "customername": "用户G012449",\n        "finishtime": "1564881678000",\n        "gender": 0,\n        "grade": 0,\n        "graduationtype": 0,\n        "ifHaveProgram": 1,\n        "inviteaddress": "",\n        "inviteremark": "",\n        "invitetime": "",\n        "isabledelay": 0,\n        "isinvite": 0,\n        "isinviteuser": "",\n        "isvisit": 0,\n        "major": null,\n        "mobile": "13011112572",\n        "name": "autotest36",\n        "remark": null,\n        "resourceid": 2030324,\n        "resourcemark": "自动化测试脚本添加",\n        "schoolname": null,\n        "schooltype": 0,\n        "score": null,\n        "scoregk": 0.0,\n        "scoretype": 0,\n        "sid": "",\n        "snumber": "G012463",\n        "source": "顾问自有资源",\n        "studentimageurl": "",\n        "studylist": [],\n        "userinforemark": null,\n        "wechat": ""\n      },\n      "timeDetail": null\n    },\n    "message": "操作成功"\n  },\n  "head": {\n    "code": 0,\n    "message": "操作成功"\n  }\n}'
+2019-07-03 09:21:19,605 test_oversea_program_list.py 46 test_oversea_program_list INFO 请求信息：http://test-xiaoxapi.aoji.cn/overseaProgram/list{'token': 'HViAlgiWJpVCdgLN', 'memberId': 'G012463', 'platform': '3'}{'resourceId': 2030325, 'startIndex': '0', 'pageSize': '10'}
+2019-07-03 09:21:19,605 test_oversea_program_list.py 47 test_oversea_program_list INFO 响应信息:[
+  {
+    "chooseadviceinfo": null,
+    "createtime": "2019-07-03 09:21:20",
+    "filename": "",
+    "filepath": "",
+    "id": 702,
+    "isableedit": 1,
+    "isfile": 0,
+    "isshowbaseinfo": 0,
+    "isshowstudyabroad": 0,
+    "lastinfo": null,
+    "lastmodifytime": "2019-07-03 09:21:20",
+    "memberid": "G012463",
+    "name": "自动化测试新增2030325的留学规划方案",
+    "r": "0A8F0F734374D7731781A561B6DB5675",
+    "startinfo": null,
+    "status": 0,
+    "studentname": "用户G012449"
+  }
+]
+2019-07-03 09:21:21,239 test_oversea_program_school_selection_detail.py 52 test_oversea_program_school_selection_detail INFO 请求信息：http://test-xiaoxapi.aoji.cn/overseaProgram/schoolSelectionDetail{'token': 'GV05ZdoWjgnUhWo0', 'memberId': 'G012463', 'platform': '3'}{'chooseId': [358]}
+2019-07-03 09:21:21,240 test_oversea_program_school_selection_detail.py 53 test_oversea_program_school_selection_detail INFO 响应信息:{
+  "body": {
+    "code": 0,
+    "detail": {
+      "caselist": null,
+      "countryid": 12,
+      "countryname": "澳洲",
+      "id": 358,
+      "images": null,
+      "majorid": null,
+      "majorname": "",
+      "memberid": "G012463",
+      "remark": "the school selection create by autotest!",
+      "resourceid": 2030326,
+      "schoolid": 90,
+      "schoolname": "Lomonosov Moscow State University(莫斯科国立大学)",
+      "subtitle": null
+    },
+    "message": "操作成功"
+  },
+  "head": {
+    "code": 0,
+    "message": "操作成功"
+  }
+}
+2019-07-03 09:21:22,727 test_oversea_program_share_detail.py 55 test_oversea_program_share_detail INFO 请求信息：http://test-xiaoxapi.aoji.cn/overseaProgram/shareDetail{'token': 'ffZX87dUkOBvqZIO', 'memberId': 'G012463', 'platform': '3', 'browserId': '1'}{'resourceId': 2030327, 'schemeId': 704, 'r': 'CA82D4FAF43E6215F7B0014D074B6FB3', 'f': 'G012463'}
+2019-07-03 09:21:22,727 test_oversea_program_share_detail.py 56 test_oversea_program_share_detail INFO 响应信息：{
+  "body": {
+    "code": 0,
+    "detail": {
+      "expertDetail": {
+        "avatar": "http://xiaoxi-cdn.globeedu.com/2019/06/04/jpeg/2019060414153213760899.jpeg",
+        "email": "abc@163.com",
+        "memberId": "G012463",
+        "name": "小白",
+        "tel": "13426475666"
+      },
+      "intentionDetail": null,
+      "nameDetail": {
+        "chooseadviceinfo": null,
+        "filename": "",
+        "filepath": "",
+        "isableedit": 1,
+        "isfile": 0,
+        "isshowbaseinfo": 0,
+        "isshowstudyabroad": 0,
+        "lastinfo": null,
+        "name": "自动化测试新增2030327的留学规划方案",
+        "schemeid": 704,
+        "startinfo": null,
+        "status": 1
+      },
+      "r": "CA82D4FAF43E6215F7B0014D074B6FB3",
+      "selectionList": [],
+      "studentDetail": {
+        "abledelaytime": "1564622482000",
+        "accepttime": "1562116882000",
+        "area": 0,
+        "areaname": "",
+        "countryname": "马来西亚",
+        "customermobile": "13426475666",
+        "customername": "用户G012449",
+        "finishtime": "1564881682000",
+        "gender": 0,
+        "grade": 0,
+        "graduationtype": 0,
+        "ifHaveProgram": 1,
+        "inviteaddress": "",
+        "inviteremark": "",
+        "invitetime": "",
+        "isabledelay": 0,
+        "isinvite": 0,
+        "isinviteuser": "",
+        "isvisit": 0,
+        "major": null,
+        "mobile": "13011119288",
+        "name": "autotest66",
+        "remark": null,
+        "resourceid": 2030327,
+        "resourcemark": "自动化测试脚本添加",
+        "schoolname": null,
+        "schooltype": 0,
+        "score": null,
+        "scoregk": 0.0,
+        "scoretype": 0,
+        "sid": "",
+        "snumber": "G012463",
+        "source": "顾问自有资源",
+        "studentimageurl": "",
+        "studylist": [],
+        "userinforemark": null,
+        "wechat": ""
+      },
+      "timeDetail": null
+    },
+    "message": "操作成功"
+  },
+  "head": {
+    "code": 0,
+    "message": "操作成功"
+  }
+}
+2019-07-03 09:21:22,728 test_oversea_program_share_detail.py 67 test_oversea_program_share_detail ERROR 'schoolchinesename' not found in '{\n  "body": {\n    "code": 0,\n    "detail": {\n      "expertDetail": {\n        "avatar": "http://xiaoxi-cdn.globeedu.com/2019/06/04/jpeg/2019060414153213760899.jpeg",\n        "email": "abc@163.com",\n        "memberId": "G012463",\n        "name": "小白",\n        "tel": "13426475666"\n      },\n      "intentionDetail": null,\n      "nameDetail": {\n        "chooseadviceinfo": null,\n        "filename": "",\n        "filepath": "",\n        "isableedit": 1,\n        "isfile": 0,\n        "isshowbaseinfo": 0,\n        "isshowstudyabroad": 0,\n        "lastinfo": null,\n        "name": "自动化测试新增2030327的留学规划方案",\n        "schemeid": 704,\n        "startinfo": null,\n        "status": 1\n      },\n      "r": "CA82D4FAF43E6215F7B0014D074B6FB3",\n      "selectionList": [],\n      "studentDetail": {\n        "abledelaytime": "1564622482000",\n        "accepttime": "1562116882000",\n        "area": 0,\n        "areaname": "",\n        "countryname": "马来西亚",\n        "customermobile": "13426475666",\n        "customername": "用户G012449",\n        "finishtime": "1564881682000",\n        "gender": 0,\n        "grade": 0,\n        "graduationtype": 0,\n        "ifHaveProgram": 1,\n        "inviteaddress": "",\n        "inviteremark": "",\n        "invitetime": "",\n        "isabledelay": 0,\n        "isinvite": 0,\n        "isinviteuser": "",\n        "isvisit": 0,\n        "major": null,\n        "mobile": "13011119288",\n        "name": "autotest66",\n        "remark": null,\n        "resourceid": 2030327,\n        "resourcemark": "自动化测试脚本添加",\n        "schoolname": null,\n        "schooltype": 0,\n        "score": null,\n        "scoregk": 0.0,\n        "scoretype": 0,\n        "sid": "",\n        "snumber": "G012463",\n        "source": "顾问自有资源",\n        "studentimageurl": "",\n        "studylist": [],\n        "userinforemark": null,\n        "wechat": ""\n      },\n      "timeDetail": null\n    },\n    "message": "操作成功"\n  },\n  "head": {\n    "code": 0,\n    "message": "操作成功"\n  }\n}'
+2019-07-03 09:21:24,094 test_oversea_program_update_school_selection.py 60 test_oversea_program_update_school_selection INFO 请求信息：http://test-xiaoxapi.aoji.cn/overseaProgram/updateSchoolSelection{'platform': '3', 'token': 'Ge5CpNmOLFTWY6HZ', 'memberId': 'G012463'}{'chooseId': '0', 'countryId': '12', 'countryName': '澳洲', 'schoolId': '90', 'schoolName': '莫斯科国立大学', 'remark': 'the school selection create by autotest!', 'resourceId': '2030328', 'schemeId': '0'}
+2019-07-03 09:21:24,094 test_oversea_program_update_school_selection.py 61 test_oversea_program_update_school_selection INFO 响应信息：{
+  "body": {
+    "code": 0,
+    "data": {
+      "chooseid": 359,
+      "schemeid": 705
+    },
+    "message": "操作成功"
+  },
+  "head": {
+    "code": 0,
+    "message": "操作成功"
+  }
+}
+2019-07-03 09:21:24,094 test_oversea_program_update_school_selection.py 69 test_oversea_program_update_school_selection INFO 选校建议添加成功！,添加的选校信息为：[{'chooseid': 359, 'schemeid': 705}]
+2019-07-03 09:21:25,296 test_student_detail_info.py 44 test_student_detail_info_type1 INFO 请求信息：http://test-xiaoxapi.aoji.cn/counselor/Student/detailInfo{'token': '2tFhpbzvyDMnnfkt', 'memberId': 'G012463', 'platform': '3'}{'resourceId': 2030329, 'type': '1'}
+2019-07-03 09:21:25,296 test_student_detail_info.py 45 test_student_detail_info_type1 INFO 响应信息:{
+  "abledelaytime": "1564622485000",
+  "accepttime": "1562116885000",
+  "area": 0,
+  "areaname": "",
+  "bookingSchool": 0,
+  "countryname": "马来西亚",
+  "customermobile": "13426475666",
+  "customername": "用户G012449",
+  "finishtime": "1564881685000",
+  "gender": 0,
+  "grade": 0,
+  "graduationtype": 0,
+  "ifHaveProgram": 0,
+  "inviteaddress": "",
+  "inviteremark": "",
+  "invitetime": "",
+  "isabledelay": 0,
+  "isinvite": 0,
+  "isinviteuser": "",
+  "isvisit": 0,
+  "major": null,
+  "mobile": "13011112704",
+  "name": "autotest70",
+  "remark": null,
+  "resourceid": 2030329,
+  "resourcemark": "自动化测试脚本添加",
+  "schoolname": null,
+  "schooltype": 0,
+  "score": null,
+  "scoregk": 0.0,
+  "scoretype": 0,
+  "sid": "",
+  "snumber": "G012463",
+  "source": "顾问自有资源",
+  "studentimageurl": "",
+  "studylist": [],
+  "userinforemark": null,
+  "visaOperator": "-",
+  "visaTel": "",
+  "wechat": ""
+}
+2019-07-03 09:21:25,371 test_student_detail_info.py 75 test_student_detail_info_type2 INFO 请求信息：http://test-xiaoxapi.aoji.cn/counselor/Student/detailInfo{'token': '2tFhpbzvyDMnnfkt', 'memberId': 'G012463', 'platform': '3'}{'resourceId': 2030329, 'type': '2'}
+2019-07-03 09:21:25,372 test_student_detail_info.py 76 test_student_detail_info_type2 INFO 响应信息:{
+  "abledelaytime": "1564622485000",
+  "accepttime": "1562116885000",
+  "area": 0,
+  "areaname": "",
+  "bookingSchool": 0,
+  "countryname": "马来西亚",
+  "customermobile": "13426475666",
+  "customername": "用户G012449",
+  "finishtime": "1564881685000",
+  "gender": 0,
+  "grade": 0,
+  "graduationtype": 0,
+  "ifHaveProgram": 0,
+  "inviteaddress": "",
+  "inviteremark": "",
+  "invitetime": "",
+  "isabledelay": 0,
+  "isinvite": 0,
+  "isinviteuser": "",
+  "isvisit": 0,
+  "major": null,
+  "mobile": "13011112704",
+  "name": "autotest70",
+  "remark": null,
+  "resourceid": 2030329,
+  "resourcemark": "自动化测试脚本添加",
+  "schoolname": null,
+  "schooltype": 0,
+  "score": null,
+  "scoregk": 0.0,
+  "scoretype": 0,
+  "sid": "",
+  "snumber": "G012463",
+  "source": "顾问自有资源",
+  "studentimageurl": "",
+  "studylist": [],
+  "userinforemark": null,
+  "visaOperator": "-",
+  "visaTel": "",
+  "wechat": ""
+}
+2019-07-03 09:21:25,443 test_student_detail_info.py 104 test_student_detail_info_type3 INFO 请求信息：http://test-xiaoxapi.aoji.cn/counselor/Student/detailInfo{'token': '2tFhpbzvyDMnnfkt', 'memberId': 'G012463', 'platform': '3'}{'resourceId': 2030329, 'type': '3'}
+2019-07-03 09:21:25,443 test_student_detail_info.py 105 test_student_detail_info_type3 INFO 响应信息:{
+  "abledelaytime": "1564622485000",
+  "accepttime": "1562116885000",
+  "area": 0,
+  "areaname": "",
+  "bookingSchool": 0,
+  "countryname": "马来西亚",
+  "customermobile": "13426475666",
+  "customername": "用户G012449",
+  "finishtime": "1564881685000",
+  "gender": 0,
+  "grade": 0,
+  "graduationtype": 0,
+  "ifHaveProgram": 0,
+  "inviteaddress": "",
+  "inviteremark": "",
+  "invitetime": "",
+  "isabledelay": 0,
+  "isinvite": 0,
+  "isinviteuser": "",
+  "isvisit": 0,
+  "major": null,
+  "mobile": "13011112704",
+  "name": "autotest70",
+  "remark": null,
+  "resourceid": 2030329,
+  "resourcemark": "自动化测试脚本添加",
+  "schoolname": null,
+  "schooltype": 0,
+  "score": null,
+  "scoregk": 0.0,
+  "scoretype": 0,
+  "sid": "",
+  "snumber": "G012463",
+  "source": "顾问自有资源",
+  "studentimageurl": "",
+  "studylist": [],
+  "userinforemark": null,
+  "visaOperator": "-",
+  "visaTel": "",
+  "wechat": ""
+}
+2019-07-03 09:21:26,608 test_student_list.py 44 test_student_list_status_0 INFO 请求信息：http://test-xiaoxapi.aoji.cn/counselor/studentsV274{'token': 'GNRmz29jkOw5Rpxq', 'memberId': 'G012463', 'platform': '3'}{'studentName': 'autotest39', 'status': '0', 'startIndex': '0', 'pageSize': '10'}
+2019-07-03 09:21:26,609 test_student_list.py 45 test_student_list_status_0 INFO 学生列表响应信息：{
+  "body": {
+    "code": 0,
+    "list": [
+      {
+        "countryName": "马来西亚",
+        "distributionTime": "2019-07-03 09:21:26",
+        "groupId": null,
+        "ifdelay": 0,
+        "ifsignable": 1,
+        "overduetime": "2019-08-04 09:21:27",
+        "phone": "130****4328",
+        "phoneNumber": "13011114328",
+        "pid": 0,
+        "resourceId": 2030330,
+        "resourceName": "autotest39",
+        "resourceStatus": 0,
+        "rid": 0,
+        "sid": "",
+        "signtype": 0,
+        "source": 0
+      }
+    ],
+    "message": "操作成功"
+  },
+  "head": {
+    "code": 0,
+    "message": "操作成功"
+  }
+}
+2019-07-03 09:21:26,666 run_main.py 18 run_case INFO ======================测试结束=====================
